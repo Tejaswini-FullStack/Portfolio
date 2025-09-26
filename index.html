@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tejaswini Pathireddy | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset & base */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; line-height: 1.6; background: #f4f7ff; color: #333; }
+        a { text-decoration: none; color: inherit; }
+
+        /* Header */
+        header { background: linear-gradient(135deg, #4B6CB7, #182848); color: #fff; padding: 60px 20px; text-align: center; }
+        header h1 { font-size: 3rem; margin-bottom: 10px; }
+        header p { font-size: 1.1rem; margin-bottom: 10px; }
+        .social-links a { margin: 0 10px; display: inline-block; background: #fff; color: #4B6CB7; padding: 8px 15px; border-radius: 6px; font-weight: bold; transition: 0.3s; }
+        .social-links a:hover { background: #4B6CB7; color: #fff; }
+
+        /* Sections */
+        section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+        section h2 { color: #4B6CB7; font-size: 2rem; margin-bottom: 20px; border-bottom: 2px solid #4B6CB7; display: inline-block; padding-bottom: 5px; }
+        section p { margin-bottom: 20px; }
+
+        /* Skills & Interests */
+        ul { list-style: none; padding-left: 0; }
+        ul li { margin-bottom: 10px; }
+
+        /* Projects & Internships Cards */
+        .card { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 20px; transition: transform 0.3s, box-shadow 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.2); }
+        .card h3 { color: #182848; margin-bottom: 10px; }
+
+        /* Footer */
+        footer { background: #182848; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+
+        /* Responsive */
+        @media(max-width:768px) {
+            header h1 { font-size: 2.2rem; }
+            section { padding: 40px 15px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tejaswini Pathireddy</h1>
+    <p>Python Full Stack Developer | Django | React JS | AI/ML</p>
+    <p>Bangalore | <a href="mailto:tejaspathireddy@gmail.com" style="color:white;">tejaspathireddy@gmail.com</a> | 9949399827</p>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/tejaswini-pathireddy-62916424a/">LinkedIn</a>
+        <a href="https://github.com/Tejaswini-FullStack">GitHub</a>
+        <a href="https://www.hackerrank.com/profile/tejaswini_pathi1">HackerRank</a>
+        <a href="https://leetcode.com/u/user4685aS/">LeetCode</a>
+    </div>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Highly motivated Python Full Stack Developer with hands-on experience in Django, React JS, REST APIs, MySQL, HTML, CSS, and JavaScript. Passionate about building dynamic, responsive web applications and solving real-world problems. Skilled in frontend-backend integration, CRUD operations, and machine learning projects. Always eager to learn new technologies and contribute to impactful software solutions.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li><strong>Programming:</strong> Python</li>
+        <li><strong>AI/ML:</strong> Machine Learning</li>
+        <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React JS</li>
+        <li><strong>Database:</strong> MySQL</li>
+        <li><strong>Frameworks:</strong> Django</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Iris Flower Classification (Python, scikit-learn, Pandas)</h3>
+        <ul>
+            <li>Implemented a supervised ML model to classify Iris flower species based on petal and sepal dimensions.</li>
+            <li>Performed data preprocessing, normalization, and dataset splitting.</li>
+            <li>Trained Logistic Regression model achieving 100% accuracy.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Django To-Do App (Django, HTML, CSS, MySQL)</h3>
+        <ul>
+            <li>Developed a task manager demonstrating CRUD operations.</li>
+            <li>Implemented user authentication and personalized task lists.</li>
+            <li>Integrated Django ORM with MySQL for database management.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Hanuman Project (HTML, CSS, JS, Django, REST API, MySQL)</h3>
+        <ul>
+            <li>Developed a full-stack temple website with dynamic pages and user authentication.</li>
+            <li>Designed a services module for managing offerings and interactions.</li>
+            <li>Built REST APIs for CRUD operations between frontend and backend.</li>
+            <li>Created a responsive and interactive UI using HTML, CSS, and JavaScript.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>React JS Movie App (React, HTML, CSS, TMDb API)</h3>
+        <ul>
+            <li>Developed a dynamic movie web application using React JS.</li>
+            <li>Built reusable React components and managed state using <code>useState</code> and <code>useEffect</code>.</li>
+            <li>Integrated TMDb API to display movie data including posters and ratings.</li>
+            <li>Implemented search functionality with a responsive, user-friendly UI.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="internships">
+    <h2>Internships</h2>
+    <div class="card">
+        <h3>Python Full Stack Developer Intern – Pentagon Space (Mar 2025 – Present)</h3>
+        <ul>
+            <li>Worked on the Hanuman Project as a full-stack web developer.</li>
+            <li>Handled frontend-backend integration, REST APIs, and database management.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+        <li>Microsoft MTA: Introduction to Programming using Python</li>
+        <li>Salesforce Certified AI Associate</li>
+        <li>IBM SkillBuild: Frontend Development</li>
+        <li>Participated in GDG 30 Days of Gen AI Study Jam</li>
+    </ul>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <ul>
+        <li><strong>Sri Venkateswara Engineering College</strong> (2021 – 2025) – B.Tech CSE, 84%</li>
+        <li><strong>Sri Chaitanya Junior College</strong> (2019 – 2021) – Intermediate MPC, 91%</li>
+        <li><strong>J.C.R Chaitanya English Medium High School</strong> (2019) – SSC, 10 CGPA</li>
+    </ul>
+</section>
+
+<section id="interests">
+    <h2>Interests</h2>
+    <ul>
+        <li>Reading Books</li>
+        <li>Playing Indoor Games</li>
+    </ul>
+</section>
+
+<footer>
+    &copy; 2025 Tejaswini Pathireddy | Built with HTML, CSS, JS
+</footer>
+
+</body>
+</html>
