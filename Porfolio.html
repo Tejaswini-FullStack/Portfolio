@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tejaswini Pathireddy — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; /* dark navy */
+      --card:#0b1220;
+      --muted:#9aa4b2;
+      --accent1:#7c3aed; /* purple */
+      --accent2:#06b6d4; /* teal */
+      --glass: rgba(255,255,255,0.03);
+      --maxw:1100px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,Roboto Condensed,"Helvetica Neue",Arial;
+      background: linear-gradient(180deg,var(--bg) 0%, #081021 100%);
+      color:#e6eef8; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      padding:32px;
+      display:flex;justify-content:center;
+    }
+    .wrapper{width:100%;max-width:var(--maxw)}
+
+    header{
+      display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;
+    }
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--accent1),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:800;color:white}
+    nav{display:flex;gap:12px}
+    nav a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:8px;font-size:14px}
+    nav a:hover{color:white;background:var(--glass)}
+
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:28px}
+    @media (max-width:920px){.grid{grid-template-columns:1fr;}}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:22px;border-radius:14px;box-shadow:0 6px 24px rgba(2,6,23,0.7);}
+
+    .hero{display:flex;gap:18px;align-items:flex-start}
+    .avatar{width:120px;height:120px;border-radius:16px;flex-shrink:0;background:linear-gradient(135deg,var(--accent2),var(--accent1));display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:700}
+    .intro h1{margin:0;font-size:28px}
+    .intro p{margin:8px 0 0;color:var(--muted)}
+
+    .badges{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
+    .badge{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .skill{background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:8px 10px;border-radius:8px;font-size:13px;color:var(--muted)}
+
+    .section-title{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+    .section-title h2{margin:0;font-size:18px}
+    .muted{color:var(--muted);font-size:14px}
+
+    .projects{display:grid;grid-template-columns:1fr;gap:12px}
+    .project{display:flex;flex-direction:column;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.01));padding:14px;border-radius:10px}
+    .project h3{margin:0;font-size:16px}
+    .project p{margin:8px 0 0;color:var(--muted);font-size:14px}
+    .project .meta{margin-top:10px;display:flex;gap:10px;flex-wrap:wrap}
+    .pill{font-size:13px;padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.02);color:var(--muted)}
+
+    .right .contact-item{display:flex;gap:10px;align-items:center;margin-bottom:12px}
+    .contact-item svg{opacity:0.9}
+    .resume-btn{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent1),var(--accent2));color:white;text-decoration:none;font-weight:600}
+
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* subtle animations */
+    .logo, .avatar{transform:translateY(0);transition:transform .35s ease}
+    .logo:hover,.avatar:hover{transform:translateY(-6px)}
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="brand">
+        <div class="logo">TP</div>
+        <div>
+          <div style="font-weight:700">Tejaswini Pathireddy</div>
+          <div class="muted" style="font-size:13px">Full-Stack Developer • ML Enthusiast</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="grid">
+      <div>
+        <section class="card hero">
+          <div class="avatar">TP</div>
+          <div class="intro">
+            <h1>Hi — I'm Tejaswini</h1>
+            <p class="muted">B.Tech Computer Science | Full-stack developer experienced in Python, Django, React JS, REST APIs and MySQL. I build responsive web apps and try to bring ML into useful projects.</p>
+
+            <div class="badges">
+              <span class="badge">Python</span>
+              <span class="badge">Django</span>
+              <span class="badge">React JS</span>
+              <span class="badge">Machine Learning</span>
+              <span class="badge">MySQL</span>
+            </div>
+
+            <div style="margin-top:16px">
+              <a class="resume-btn" href="#contact">Contact / Resume</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="card" style="margin-top:18px">
+          <div class="section-title"><h2>About Me</h2></div>
+          <p class="muted">I am expertise in Python, Django, React JS, REST APIs, MySQL, HTML, CSS, and JavaScript. I've developed responsive and dynamic web applications, integrated frontend and backend systems, and built machine learning projects. I enjoy solving real-world problems and learning new technologies.</p>
+
+          <div style="margin-top:14px" class="section-title"><h2>Education</h2></div>
+          <div class="muted">Sri Venkateswara Engineering College — B.Tech in Computer Science and Engineering (2021–2025) • Percentage: 84%</div>
+
+        </section>
+
+        <section id="projects" class="card" style="margin-top:18px">
+          <div class="section-title"><h2>Selected Projects</h2></div>
+          <div class="projects">
+            <div class="project">
+              <h3>Iris Flower Classification</h3>
+              <p class="muted">Built a supervised ML model (Random Forest) to classify Iris flowers. Performed data preprocessing, normalization, train-test split and evaluation with accuracy and confusion matrix.</p>
+              <div class="meta">
+                <span class="pill">Python</span>
+                <span class="pill">Scikit-learn</span>
+                <span class="pill">Pandas</span>
+              </div>
+            </div>
+
+            <div class="project">
+              <h3>Django TODO App</h3>
+              <p class="muted">Full-stack task management app with user authentication, personalized task lists, CRUD operations and MySQL (Django ORM). Implemented Google Login.</p>
+              <div class="meta">
+                <span class="pill">Django</span>
+                <span class="pill">MySQL</span>
+                <span class="pill">HTML/CSS</span>
+              </div>
+            </div>
+
+            <div class="project">
+              <h3>React JS Movie App</h3>
+              <p class="muted">Dynamic movie web app using reusable React components and TMDb API. Implemented search, state management with hooks, responsive UI and poster display.</p>
+              <div class="meta">
+                <span class="pill">React</span>
+                <span class="pill">TMDb API</span>
+                <span class="pill">Responsive UI</span>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section id="certs" class="card" style="margin-top:18px">
+          <div class="section-title"><h2>Certifications</h2></div>
+          <ul class="muted" style="margin:0 0 0 18px;padding:0;">
+            <li>Microsoft MTA: Introduction to Programming using Python</li>
+            <li>Salesforce Certified AI Associate</li>
+          </ul>
+        </section>
+
+      </div>
+
+      <aside class="right">
+        <div class="card" style="position:sticky;top:28px">
+          <div class="section-title"><h2>Contact</h2></div>
+          <div class="contact-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 8.5C3 6.57 4.57 5 6.5 5h11C19.43 5 21 6.57 21 8.5v7c0 1.93-1.57 3.5-3.5 3.5h-11C4.57 19 3 17.43 3 15.5v-7z" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg><div><div style="font-weight:600">pathireddytejaswini@gmail.com</div><div class="muted" style="font-size:13px">Email</div></div></div>
+
+          <div class="contact-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 16.92V21a1 1 0 0 1-1.11 1 19 19 0 0 1-8.63-3.07A19 19 0 0 1 3 4.11 1 1 0 0 1 4 3h4.09a1 1 0 0 1 1 .75c.12.62.32 1.22.61 1.79a1 1 0 0 1-.24 1.08L8.9 8.9a13 13 0 0 0 6.2 6.2l1.27-1.27a1 1 0 0 1 1.08-.24c.57.29 1.17.49 1.79.61a1 1 0 0 1 .75 1V21z" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg><div><div style="font-weight:600">+91 99493 99827</div><div class="muted" style="font-size:13px">Phone</div></div></div>
+
+          <div style="margin-top:12px"><a class="resume-btn" href="#">Download Resume</a></div>
+
+          <div style="margin-top:18px" class="section-title"><h2>Skills</h2></div>
+          <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">Django</div>
+            <div class="skill">React JS</div>
+            <div class="skill">REST APIs</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">HTML & CSS</div>
+            <div class="skill">Machine Learning</div>
+          </div>
+
+          <div style="margin-top:18px" class="section-title"><h2>Profiles</h2></div>
+          <div class="muted" style="font-size:14px">
+            LinkedIn • GitHub • HackerRank • LeetCode
+            <div style="font-size:13px;margin-top:8px;color:var(--muted)">Add full links in the HTML where appropriate.</div>
+          </div>
+
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      Built by Tejaswini • B.Tech CSE • Available for internships & full-time roles
+    </footer>
+  </div>
+</body>
+</html>
